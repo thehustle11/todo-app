@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jQuery todo app</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+    <h1><a href="#"><span id="name"></span>To Do's</a></h1>
+      <div class="actions">
+        <div class="material-icons fa fa-check-square-o" id="markAll" title="mark all complete/incomplete"></div>
+        <div class="material-icons fa fa-trash" id="trashAll" title="delete marked items"></div>
+      </div> <!-- /.actions -->
+  </header>
+
+  <div class="insertBox">
+    <input type="text" class="insert" placeholder="enter your task" spellcheck='false'>
+  </div>
+
+  <div class="undo">undo</div>
+  <div class="tasks">
+    <ul>
+    </ul>
+  </div>
+
+  <div class="material-icons fa fa-long-arrow-up" id="scrollTop"></div>
+
+
+<script src="js/jquery.min.js" charset="utf-8"></script>
+<script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>

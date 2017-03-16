@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  background: skyblue;
+  font-family: lato, sans-serif;
+  transition: all .3s linear; }
+
+a {
+  text-decoration: none;
+  color: black; }
+  a:hover:after {
+    content: ' (by vivek)';
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic; }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  box-sizing: border-box; }
+
+header {
+  z-index: 100;
+  background: whitesmoke;
+  box-shadow: 0 0 4px grey;
+  height: 90px;
+  line-height: 90px;
+  padding: 0 0 0 25px;
+  overflow: hidden; }
+  header h1 {
+    display: inline-block;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: lato;
+    margin: 0; }
+    @media (min-width: 1000px) {
+      header h1 {
+        margin: 0 0 0 25%; } }
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 22px; } }
+    header h1 a {
+      color: #444;
+      font-weight: 300; }
+  header .actions {
+    display: inline-block;
+    float: right;
+    overflow: hidden; }
+    @media (min-width: 1000px) {
+      header .actions {
+        margin: 0 25% 0 0; } }
+    header .actions .material-icons {
+      display: inline-block;
+      height: 90px;
+      width: 90px;
+      font-size: 32px;
+      line-height: 90px;
+      text-align: center;
+      margin: 0;
+      cursor: pointer;
+      color: #444;
+      transition: box-shadow 0.15s ease, background 0.5s ease 0.25s; }
+      @media (max-width: 640px) {
+        header .actions .material-icons {
+          font-size: 28px; } }
+      header .actions .material-icons:hover {
+        box-shadow: 0px -5px grey inset; }
+      header .actions .material-icons:active {
+        background: lightgrey;
+        transition: all 0s; }
+
+.insertBox {
+  padding: 25px;
+  margin: 0;
+  overflow: hidden; }
+  @media (min-width: 1000px) {
+    .insertBox {
+      padding: 25px 25% 25px 25%; } }
+  @media (max-width: 500px) {
+    .insertBox {
+      padding: 25px 0 25px 0; }
+      .insertBox.testforiphone {
+        padding: 0;
+        box-shadow: 0 0 25px 0px grey; } }
+  .insertBox .insert {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background: whitesmoke;
+    height: 45px;
+    margin: 0;
+    width: 100%;
+    border-radius: 5px;
+    color: #555;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+    box-sizing: border-box; }
+    .insertBox .insert::-moz-selection {
+      background: skyblue;
+      box-shadow: 0 0 4px grey; }
+    .insertBox .insert::selection {
+      background: skyblue;
+      box-shadow: 0 0 4px grey; }
+    .insertBox .insert:focus {
+      box-shadow: 0 0 0 5px white insert; }
+    @media (max-width: 500px) {
+      .insertBox .insert {
+        border-radius: 0; } }
+
+.tasks {
+  padding-bottom: 25px; }
+  .tasks ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 25px 0 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 17px; }
+    @media (min-width: 1000px) {
+      .tasks ul {
+        margin: 0 25%; } }
+    @media (min-width: 500px) {
+      .tasks ul {
+        margin: 0;
+        border-radius: 0; } }
+    .tasks ul .completed {
+      color: grey;
+      text-decoration: line-through;
+      background: linear-gradient(to right, lightgrey, #f2f2f2);
+      background: -webkit-linear-gradient(to right, lightgrey, #f2f2f2); }
+      .tasks ul .completed:hover {
+        color: #333;
+        text-decoration: none; }
+    .tasks ul li {
+      padding: 10px;
+      outline: 1px solid lightgrey;
+      background-color: whitesmoke;
+      overflow: hidden; }
+      .tasks ul li:hover .material-icons {
+        box-shadow: 0 0 0 1px #40a86d inset; }
+      .tasks ul li .material-icons {
+        vertical-align: top;
+        font-size: 20px;
+        margin-right: 10px;
+        border-radius: 25%;
+        font-weight: bold;
+        color: #40a86d; }
+
+.undo {
+  display: none;
+  width: 75px;
+  line-height: 25px;
+  color: green;
+  text-transform: uppercase;
+  margin: -20px auto 5px auto;
+  text-align: center;
+  font-size: 14px; }
+  .undo:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer; }
+
+#scrollTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: skyblue;
+  border-radius: 5px;
+  font-size: 30px;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  color: #333;
+  padding: 10px 5px;
+  cursor: pointer; }
+  @media (min-width: 1000px) {
+    #scrollTop {
+      background: whitesmoke;
+      right: 25px;
+      bottom: 25px; } }
+
+::-webkit-input-placeholder {
+  font-family: 'open sans', sans-serif;
+  opacity: .5;
+  font-weight: 300; }
+
+input:focus {
+  color: #555; }
+
+#name {
+  font-weight: 400; }
